@@ -1,0 +1,51 @@
+.title {
+    background-color: rgb(168, 205, 165);
+    /* margin-top: 100px; */
+    /* top: 100px; */
+    position: relative;
+    top: 100px; 
+    /* Cách vị trí gốc là 100px */
+    left: 50px;
+}
+
+/* position: static (Gía trị mặc định)
+   
+    position: relative -> dùng dc các thuộc tính top, left, right, bottom
+   => Thể có thể di chuyển 4 hương top, left, right, bottom và không làm ảnh hưởng đến các thẻ xung quanh
+   Hãy hình dung việc sử dụng position relative như đang thả diều:
+   - Thẻ gốc ban đầu luôn ở ví mặc đi mặc đinh của nó trong trang (Người thả diều)
+   - Nội dung có thể di chuyển mà ko anh hưởng đến các thẻ xung quanh (Cánh diều)
+
+    position: absolute
+    - Thẻ đó sẽ được nhấc khỏi dòng chảy mặc của trang => ảnh hưởng đến vị xung quanh (Ví dụ trò rút gỗ)
+    - Hoạt động trong không gian giới hạn của thẻ cha gần nhá có position là absolute/relative
+   
+    position: fixed
+    - Luôn làm cho thẻ cố định và di chuyển theo khung màn hình của web
+    */
+
+
+
+.container {
+    width: 600px;
+    height: 400px;
+    border: 5px solid red;
+    position: relative;
+}
+
+.box1 {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    top: 0px;
+    background-color: rgb(118, 212, 102);
+}
+
+.social-contact-container {
+    width: 300px;
+    height: 300px;
+    border: 2px dashed pink;
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+}

@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      /* Để gọi ra class để css: .+tên_class { chứa các thuộc tính css } */
+      .box1 {
+        background-color: antiquewhite;
+        width: 200px;
+        color: red;
+        /* border: đường viền
+            - border-width: độ dày của viền
+            - border-style: kiểu viền
+            - border-color: màu của đường viền
+            - border: width style color
+            - border-radius: độ cong của đường viền
+        */
+        /* border-width: 10px;
+        border-color: black;
+        border-style: solid; */
+        border: 10px solid black;
+        border-radius: 20px;
+
+        /* padding: Khoảng cách giữa nội dung và đường viền
+            - padding-top, padding-right, padding-bottom, padding-left 
+            padding: 10px => 4 huong = 10px
+            padding: 10px 20px => top=bottom=10px và left=right=20px
+            padding: 10px 30px 20px => top=10px và left=right=30px và bottom=20px
+        */
+
+        padding-top: 10px;
+        padding-right: 20px;
+        padding-bottom: 30px;
+        padding-left: 40px;
+      }
+
+      .box2 {
+        background-color: aquamarine;
+        width: 400px;
+        color: blue;
+      }
+
+      .item-gray {
+        width: 50px;
+        background-color: rgb(190, 190, 190);
+        padding: 10px 15px;
+        border-radius: 20px;
+        display: inline-block;
+        /* font-size: 18px; */
+      }
+
+      .item-pink {
+        background-color: pink;
+      }
+
+      .box2-img {
+        width: 100%;
+        /* width: 100% => luôn bằng bề ngang (width) của khối cha */
+      }
+    </style>
+  </head>
+  <body>
+    <!-- divide -->
+    <!-- Format code:  -->
+    <div class="box1">
+      <h1 style="font-size: 10px">Name: Nguyen Danh Phuong</h1>
+      <p>Age: 30</p>
+      <a href="https://github.com/">
+        Trang ca nhan cua toi: https://github.com/
+      </a>
+    </div>
+
+    <hr />
+    <div class="box2">
+      <img class="box2-img" src="https://static.kfcvietnam.com.vn/images/category/lg/COMBO%201%20NGUOI.jpg?v=4adqDL" alt="">
+      <h1 class="box2-tilte">Name: Frenkie Nguyen</h1>
+      <p>Age: 30</p>
+      <a href="https://github.com/">
+        Trang ca nhan cua toi: https://github.com/
+      </a>
+    </div>
+
+    <h1>Bài chữa</h1>
+
+    <div class="item-gray">
+        5:30PM
+    </div>
+
+    <div class="item-gray item-pink">
+        7:30PM
+    </div>
+
+    <div class="item-gray">
+        8:00PM
+    </div>
+
+    <div class="item-gray">
+        9:30PM
+    </div>
+  </body>
+</html>

@@ -1,0 +1,10 @@
+3 Cách để thêm style vào trang web:
+
+
+- Inline style: css trực tiếp vào bên trong thẻ:
+VD: <tagname style="background-color: red; color: black">Thoi tiet hom nay dep</tagname>
+
+- Internal style: Gán thuộc tính class hoặc id vào trong thẻ để CSS
+inline-style > Internal-style: CSS trực tiếp trong thẻ sẽ ưu tiên hơn css ở ngoài thẻ
+
+- External style: Tạo file CSS
